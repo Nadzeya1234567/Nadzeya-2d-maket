@@ -1,0 +1,33 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+@import "../scss/header.scss";
+@import "../scss/import-cdn.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
+@import "../scss/advantages.scss";
+@import "../scss/portfolio.scss";
+@import "../scss/person.scss";
+@import "../scss/slider.scss";
+@import "../scss/ready.scss";
+@import "../scss/footer.scss";
+html {
+  font-family: "Raleway", "Cardo", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+section {
+  padding: 114px 0;
+  background-color: $bg-everywhere;
+}

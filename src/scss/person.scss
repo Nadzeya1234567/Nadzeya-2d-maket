@@ -1,0 +1,53 @@
+.person-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.person-card {
+  width: 260px;
+  margin: 0 15px;
+}
+.person__image {
+  width: 260px;
+  height: 175px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.person__image img {
+  width: 100%;
+}
+.person__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: $dark-grey;
+}
+.person__subtitle {
+  font-size: 1.12rem;
+  color: $red;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+.person__text {
+  font-size: 1.12rem;
+  color: $light-grey;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+.person__social-icons i {
+  width: 39px;
+  height: 39px;
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 1.12rem;
+  color: $person-icons;
+  border: 1px solid $person-icons;
+  margin-right: 20px;
+}
