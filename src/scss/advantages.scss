@@ -1,10 +1,13 @@
 .advantages-wrap {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   flex-wrap: wrap;
   align-content: stretch;
   margin: 0 -15px;
+  @media (max-width: 992px) {
+    justify-content: space-around;
+  }
 }
 .advantages-card {
   width: 30%;
@@ -18,6 +21,27 @@
   &:nth-child(6) {
     margin-bottom: 0;
   }
+  @media (max-width: 992px) {
+    width: 40%;
+    margin: 0 15px 60px;
+    &:nth-child(5) {
+      display: none;
+    }
+    &:nth-child(6) {
+      display: none;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 673px) {
+    &:nth-child(4) {
+      display: none;
+    }
+    width: 80%;
+    margin: 0 15px 50px;
+  }
+
   &__image {
     width: 100px;
     height: 100px;

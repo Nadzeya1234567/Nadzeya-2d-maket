@@ -1,5 +1,4 @@
 @import "../scss/variables.scss";
-@import "../scss/mixins.scss";
 @import "../scss/header.scss";
 @import "../scss/import-cdn.scss";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
@@ -9,8 +8,34 @@
 @import "../scss/slider.scss";
 @import "../scss/ready.scss";
 @import "../scss/footer.scss";
+
 html {
   font-family: "Raleway", "Cardo", serif;
+  @media (max-width: 1200px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 992px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 762px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 468px) {
+    html {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 320px) {
+    html {
+      font-size: 12px;
+    }
+  }
 }
 * {
   margin: 0;
@@ -26,8 +51,39 @@ html {
   padding: 0 15px;
   position: relative;
   z-index: 1;
+  @media (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media (max-width: 762px) {
+    max-width: 90%;
+  }
+  @media (max-width: 468px) {
+    max-width: 90%;
+  }
+  @media (max-width: 320px) {
+    max-width: 100%;
+  }
 }
 section {
   padding: 114px 0;
   background-color: $bg-everywhere;
+
+  @media (max-width: 1200px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 762px) {
+    padding: 70px 0;
+  }
+  @media (max-width: 468px) {
+    padding: 55px 0;
+  }
+  @media (max-width: 320px) {
+    padding: 50px 0;
+  }
 }
