@@ -1049,27 +1049,27 @@ html {
   font-family: "Raleway", "Cardo", serif;
 }
 @media (max-width: 1200px) {
-  html html {
+  html {
     font-size: 16px;
   }
 }
 @media (max-width: 992px) {
-  html html {
+  html {
     font-size: 15px;
   }
 }
 @media (max-width: 762px) {
-  html html {
+  html {
     font-size: 14px;
   }
 }
 @media (max-width: 468px) {
-  html html {
+  html {
     font-size: 13px;
   }
 }
 @media (max-width: 320px) {
-  html html {
+  html {
     font-size: 12px;
   }
 }
