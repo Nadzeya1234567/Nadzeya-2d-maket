@@ -623,9 +623,9 @@ header::after {
 .person__social-icons i {
   width: 39px;
   height: 39px;
-  padding-top: 0.5em;
+  padding-top: 10px;
   text-align: center;
-  font-size: 1.12rem;
+  font-size: 18px;
   color: #c6cbcd;
   border: 1px solid #c6cbcd;
   margin-right: 20px;
@@ -662,7 +662,12 @@ header::after {
 /* Клонированный слайд */
 .slider {
   position: relative;
-  padding: 0 60px;
+  padding: 0 0;
+}
+@media (max-width: 785px) {
+  .slider {
+    padding: 0 0;
+  }
 }
 
 .slider__item {
@@ -764,12 +769,14 @@ header::after {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("/img/arrows/chevron-left-solid.svg") 0 0/100% no-repeat;
+  background: url("../img/arrows/chevron-left-solid.svg") 0 0/100% no-repeat;
+  display: none;
 }
 
 .slick-arrow.slick-next {
   right: 0;
-  background: url("/img/arrows/chevron-right-solid.svg") 0 0/100% no-repeat;
+  background: url("../img/arrows/chevron-right-solid.svg") 0 0/100% no-repeat;
+  display: none;
 }
 
 .slider .slick-dots {
@@ -855,13 +862,13 @@ header::after {
 @media (max-width: 422px) {
   .ready-button {
     width: 240px;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
 @media (max-width: 350px) {
   .ready-button {
     width: 230px;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
 
@@ -966,7 +973,7 @@ header::after {
 
 .upper-footer__social-icons {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,11 +981,7 @@ header::after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media (max-width: 992px) {
-  .upper-footer__social-icons {
-    /* font-size: 1.3rem; */
-  }
-}
+
 .upper-footer__social-icons a {
   color: #ffffff;
 }
@@ -989,12 +992,6 @@ header::after {
   height: 39px;
   border: 1px solid #ffffff;
   padding-top: 6px;
-}
-@media (max-width: 992px) {
-  .upper-footer__social-icons i {
-    /*    width: 32px;
-    height: 32px; */
-  }
 }
 
 .lower-footer {
