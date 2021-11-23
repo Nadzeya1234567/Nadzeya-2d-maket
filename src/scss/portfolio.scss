@@ -70,7 +70,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 80px 30px;
+  padding: 60px 30px 0;
+  @media (max-width: 1200px) {
+    padding: 50px 20px 0;
+  }
+  @media (max-width: 1068px) {
+    padding: 40px 20px 0;
+  }
+  @media (max-width: 992px) {
+    padding: 60px 30px 0;
+  }
+  @media (max-width: 460px) {
+    padding: 100px 30px 0;
+  }
+  @media (max-width: 380px) {
+    padding: 60px 30px 0;
+  }
 }
 .portfolio__mask:hover {
   display: block;
@@ -84,20 +99,42 @@
 .portfolio__mask__title {
   margin: auto;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
   color: transparent;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   &:hover {
     color: $white;
     display: block;
   }
+  @media (max-width: 1200px) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 1068px) {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  @media (max-width: 992px) {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  @media (max-width: 460px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 334px) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 50px;
+  }
 }
 .portfolio__mask__text {
   display: block;
-  font-size: 1.12rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   color: transparent;
 
   text-align: center;
@@ -105,5 +142,25 @@
   &:hover {
     color: $white;
     display: block;
+  }
+  @media (max-width: 1200px) {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  @media (max-width: 1068px) {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  @media (max-width: 460px) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  @media (max-width: 352px) {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
   }
 }
