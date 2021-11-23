@@ -118,13 +118,17 @@
 .slider .slick-arrow.slick-prev {
   left: 0;
   background: url("../img/arrows/chevron-left-solid.svg") 0 0 / 100% no-repeat;
-  display: none;
+  @media (max-width: 785px) {
+    display: none;
+  }
 }
 
 .slick-arrow.slick-next {
   right: 0;
   background: url("../img/arrows/chevron-right-solid.svg") 0 0 / 100% no-repeat;
-  display: none;
+  @media (max-width: 785px) {
+    display: none;
+  }
 }
 
 .slider .slick-dots {
