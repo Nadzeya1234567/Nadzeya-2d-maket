@@ -60,6 +60,9 @@
 }
 .upper-footer__social-icons a {
   color: $white;
+  &:hover {
+    color: $social-icons;
+  }
 }
 .upper-footer__social-icons i {
   margin: 0 15px;

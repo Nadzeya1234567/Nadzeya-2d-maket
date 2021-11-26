@@ -92,6 +92,9 @@
   color: $person-icons;
   border: 1px solid $person-icons;
   margin-right: 20px;
+  &:hover {
+    color: $social-icons;
+  }
   @media (max-width: 644px) {
     margin: 0 10px;
   }
